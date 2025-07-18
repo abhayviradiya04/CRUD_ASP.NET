@@ -1,0 +1,42 @@
+﻿@model DataTable
+@using System.Data
+
+<h1>
+    <span class="text-danger">@TempData["ErrorMessage"]</span>
+</h1>
+
+<a asp-action="ProductAddEdit">Add Product</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ProductID</th>
+            <th>ProductName</th>
+            <th>ProductPrice</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (DataRow row in Model.Rows)
+        {
+            <tr>
+                <td>@row["ProductID"]</td>
+                <td>@row["Name"]</td>
+                <td>@row["Price"]</td>
+                <td>
+                    <form method="post" asp-controller="Product" asp-action="ProductDelete">
+                        <input type="hidden" name="ProductID" value="@row["ProductID"]" />
+                        <button type="submit" class="btn btn-outline-danger btn-xs">
+                            <i class="bi bi-x">Delete</i>
+                        </button>
+                    </form>
+                </td>
+                <td>
+                    <a class="btn btn-outline-success btn-xs" asp-controller="Product" asp-action="ProductAddEdit" asp-route-ProductID="@row["ProductID"]">
+                        <i class="bi bi-pencil-fill">Edit</i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

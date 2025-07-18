@@ -1,0 +1,71 @@
+﻿@using System.Data
+@model System.Data.DataTable
+
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+</style>
+
+<h2>Product List</h2>
+
+<!-- ✅ Add New Product -->
+<a class="btn btn-success mb-3" asp-controller="Product" asp-action="AddEdit">Add New Product</a>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (DataRow row in Model.Rows)
+            {
+                <tr>
+                    <td>@row["ProductID"]</td>
+                    <td>@row["Name"]</td>
+                    <td>@row["Quantity"]</td>
+                    <td>
+                        <!-- ✅ Edit/Update -->
+                        <a asp-controller="Product" asp-action="AddEdit" asp-route-ProductID="@row["ProductID"]" class="btn btn-warning m-1">Update</a>
+
+                        <!-- ✅ Delete (with JS confirm) -->
+                        <a href="javascript:void(0);" class="btn btn-danger m-1" onclick="confirmDelete('@row["ProductID"]')">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function confirmDelete(id) {
+        if (confirm("Are you sure you want to delete this product?")) {
+            window.location.href = '/Product/Delete?ProductID=' + id;
+        }
+    }
+</script>
