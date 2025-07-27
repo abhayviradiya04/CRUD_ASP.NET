@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z7NfK7Qzosc=",
+  "dgSpecHash": "2uAA04Km/Oc=",
   "success": true,
-  "projectFilePath": "E:\\.Net Project\\CRUD_Demo_Practise\\CRUD_Demo_Practise.csproj",
+  "projectFilePath": "E:\\.Net Project\\CRUD_Demo\\CRUD_ASP.NET\\CRUD_Demo_Practise_ME\\CRUD_Demo_Practise.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abhay\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Abhay\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

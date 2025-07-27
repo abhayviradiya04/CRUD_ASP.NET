@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\.Net Project\\CRUD_Demo_Practise\\CRUD_Demo_Practise.csproj": {}
+    "E:\\.Net Project\\CRUD_Demo\\CRUD_ASP.NET\\CRUD_Demo_Practise_ME\\CRUD_Demo_Practise.csproj": {}
   },
   "projects": {
-    "E:\\.Net Project\\CRUD_Demo_Practise\\CRUD_Demo_Practise.csproj": {
+    "E:\\.Net Project\\CRUD_Demo\\CRUD_ASP.NET\\CRUD_Demo_Practise_ME\\CRUD_Demo_Practise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\.Net Project\\CRUD_Demo_Practise\\CRUD_Demo_Practise.csproj",
+        "projectUniqueName": "E:\\.Net Project\\CRUD_Demo\\CRUD_ASP.NET\\CRUD_Demo_Practise_ME\\CRUD_Demo_Practise.csproj",
         "projectName": "CRUD_Demo_Practise",
-        "projectPath": "E:\\.Net Project\\CRUD_Demo_Practise\\CRUD_Demo_Practise.csproj",
+        "projectPath": "E:\\.Net Project\\CRUD_Demo\\CRUD_ASP.NET\\CRUD_Demo_Practise_ME\\CRUD_Demo_Practise.csproj",
         "packagesPath": "C:\\Users\\Abhay\\.nuget\\packages\\",
-        "outputPath": "E:\\.Net Project\\CRUD_Demo_Practise\\obj\\",
+        "outputPath": "E:\\.Net Project\\CRUD_Demo\\CRUD_ASP.NET\\CRUD_Demo_Practise_ME\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
